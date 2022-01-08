@@ -17,8 +17,6 @@
         <title>The Haukai Restaurant</title>
         <!-- Link to the style sheet -->
         <link rel='stylesheet' type='text/css' href='./styles/default.css'>
-        <!-- Link to jQuery CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Link to the javascript file -->
         <script type="text/javascript" src="./javascript/default.js"></script>
         <!-- Link to Font Awsome CDN -->
@@ -33,7 +31,7 @@
                 <div class="logo">
                     <a href="./index.html"><img src="./images/logo.png" alt="The Hauraki Restaurant"></a>
                 </div>
-                <div class="list">
+                <div class="list" id="list">
                     <div class="navigation-item">
                         <a href='./menu.html'>Menu</a>
                     </div>
@@ -47,7 +45,7 @@
                         <a href='./contact.html'>Contact</a>
                     </div>
                 </div>
-                <a href="#" class="icon">
+                <a href="javascript:void(0);" class="icon"  id="icon" onclick="hambergerMenu()">
                   <i class="fa fa-bars"></i>
                 </a>
             </nav>

@@ -1,8 +1,16 @@
-$(document).ready(function() {
-	$('.icon').click(function(e) {
-		$(this).toggleClass('active');
-		$('.list').toggleClass('active');
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function hambergerMenu() {
+	const list = document.getElementById("list");
+	if (list.className === "list") {
+	  list.className += " active";
+	} else {
+	  list.className = "list";
+	}
 
-		e.preventDefault();
-	});
-});
+	const icon = document.getElementById("icon");
+	if (icon.className === "icon") {
+	  icon.className += " active";
+	} else {
+	  icon.className = "icon";
+	}
+  }
