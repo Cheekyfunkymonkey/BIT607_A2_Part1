@@ -162,17 +162,8 @@ hr{
 .menu img{
     width: 15vw;
 }
-/* Style for the image in the Location section */
-.location img{
-    padding: 20px;
-}
-/* Style for the Book Now section */
-.contact{
-    margin-bottom: 0;
-}
-/* Style of the h3 in the Book Now section */
-.contact h3{
-    color: #00ffff;
+.privacy{
+    font-size: 1.5vw;
 }
 /* Style for the footer */
 .footer{
@@ -318,6 +309,9 @@ hr{
     .menu-description{
         font-size: 3vw;
     }
+    .privacy{
+        font-size: 2.5vw;
+    }
     .footer{
         width: 70%;
         margin: auto;
@@ -351,7 +345,10 @@ hr{
         height: 12vh
     }
     .menu-description{
-        font-size: 5vw;
+        font-size: 3vw;
+    }
+    .privacy{
+        font-size: 3vw;
     }
     .footer{
         width: 90%;
@@ -369,5 +366,11 @@ hr{
     .list.active{
         top: 25%;
         left: 85%;
+    }
+    .menu-description{
+        font-size: 3.5vw;
+    }
+    .privacy{
+        font-size: 3.5vw;
     }
 }

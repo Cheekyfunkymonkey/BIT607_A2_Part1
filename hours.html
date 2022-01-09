@@ -9,12 +9,8 @@
              <title>The Haukai Restaurant | Hours</title>
              <!-- Link to the style sheet -->
              <link rel='stylesheet' type='text/css' href='./styles/default.css'>
-             <!-- Link to jQuery CDN -->
-             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
              <!-- Link to the javascript file -->
              <script type="text/javascript" src="./javascript/default.js"></script>
-             <!-- Link to Font Awsome CDN -->
-             <script src="https://use.fontawesome.com/e6790c65ed.js"></script>
              <!-- Viewport tag for responsive layout -->
              <meta name="viewport" content="width=device-width, initial-scale=1.0">
          </head>
@@ -25,7 +21,7 @@
                     <div class="logo">
                         <a href="./index.html"><img src="./images/logo.png" alt="The Hauraki Restaurant"></a>
                     </div>
-                    <div class="list">
+                    <div class="list" id="list">
                         <div class="navigation-item">
                             <a href='./menu.html'>Menu</a>
                         </div>
@@ -39,8 +35,8 @@
                             <a href='./contact.html'>Contact</a>
                         </div>
                     </div>
-                    <a href="#" class="icon">
-                    <i class="fa fa-bars"></i>
+                    <a href="javascript:void(0);" class="icon"  id="icon" onclick="hambergerMenu()">
+                        &#9776;
                     </a>
                 </nav>
             </header>
@@ -78,9 +74,7 @@
                 </div>
                 <!-- Section to explain the cancellation policy -->
                 <div class="footer-right">
-                    <h4>Privacy Statement</h4>
-                    <p>Privacy statement.
-                    </p>
+                    <a href="./privacy.html"><h4>Privacy Statement</h4></a>
                 </div>
              </footer>
              <!-- Copy right section -->
