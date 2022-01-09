@@ -1,5 +1,5 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function hambergerMenu() {
+function hamburgerMenu() {
 	const list = document.getElementById("list");
 	if (list.className === "list") {
 	  list.className += " active";
