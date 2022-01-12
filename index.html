@@ -3,12 +3,11 @@
      Student Number: 5047829-->
 
 <!-- Image reference: 
-     https://pixabay.com/photos/table-table-setting-event-utensils-4397860/
-     https://commons.wikimedia.org/wiki/File:Hangi_ingredients.jpg
-     https://commons.wikimedia.org/wiki/File:Maori_Statue_in_Rotorua_New_Zealand.JPG
-     https://pixabay.com/photos/green-fern-leaves-foliage-natural-715535/
      https://pixabay.com/photos/cafe-beachside-restaurant-beach-6531490/ -->
 
+<!-- Acessibility consideration
+     The ARIA landamrk roles are added. Banner for header, navigation for navigation bar and main for main content for accessibility.
+     Also entire page is navigable with a keyboard alone by pressing Tab key and Enter key to jump over the links -->
 
 <!DOCTYPE html>
 <html>
@@ -23,11 +22,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header class="header">
+        <header class="header" role="banner">
             <!-- Navigation menu at the top of the website -->
-            <nav class="navigation" id="top">
+            <nav class="navigation" id="top" role="navigation" aria-label="Top Navigation">
                 <div class="logo">
-                    <a href="./index.html"><img src="./images/logo.png" alt="The Hauraki Restaurant"></a>
+                    <a href="./index.html">The<br>Haukai<br>Restaurant</a>
                 </div>
                 <div class="list" id="list">
                     <div class="navigation-item">
@@ -55,7 +54,7 @@
             </div>
         </header>
         <!-- Main contents -->
-        <main class="main">
+        <main class="main" role="main">
             <!-- Section to explain about the accommodation -->
             <div class="about">
                 <h2>We specialise in Māori kai</h2>
@@ -65,16 +64,7 @@
                 <!-- Images of the restaurant-->
                 <div class="images">
                     <div class="image">
-                        <img src="./images/statue.jpg" alt="Hangi ingridients">
-                    </div>
-                    <div class="image">
-                        <img src="./images/restaurant.jpg" alt="The table at outside of the restaurant">
-                    </div>
-                    <div class="image">
-                        <img src="./images/hangi_ingredients.jpg" alt="Fern image">
-                    </div>
-                    <div class="image">
-                        <img src="./images/fern.jpg" alt="The table at outside of the restaurant">
+                        <img src="./images/restaurant-l.jpg" alt="A table at the outside of the restaurant with seaview in the background">
                     </div>
                 </div>
                 <div class="top">
@@ -85,7 +75,7 @@
         </main>
         <hr>
         <!-- Footer menu section -->
-        <footer class="footer">
+        <footer class="footer" role="navigation" aria-label="Footer Navigation">
             <div class="footer-left">
                 <div class="footer-item">
                     <!-- Link to the top of the website -->

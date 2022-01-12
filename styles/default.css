@@ -32,14 +32,12 @@ hr{
 }
 /* Style for the header section at the top of the page */
 .header{
-    background-image: url("../images/heading.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 500px;
 }
 .nav-top{
-    background-image: url("../images/nav-top.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -57,6 +55,11 @@ hr{
     padding: 20px;
     margin: 0 1.5vw;
     float: left;
+    line-height: 90%;
+    font-size: 1.5vw;
+}
+.logo img{
+    width: 50%;
 }
 .list{
     position: absolute;
@@ -160,7 +163,7 @@ hr{
     text-align: left;
 }
 .menu img{
-    width: 15vw;
+    padding: 20px;
 }
 .privacy{
     font-size: 1.5vw;
@@ -222,6 +225,9 @@ hr{
     .navigation{
         font-size: 2vw;
     }
+    .logo{
+        font-size: 2vw;
+    }
     /* Style of the h2 for the main contents */
     .main h2{
         font-size: 3.5vw;
@@ -271,10 +277,7 @@ hr{
         height: 17vh;
     }
     .logo{
-        width: 100%;
-    }
-    .logo img{
-        width: 15vw;
+        font-size: 3vw;
     }
     .icon{
         margin: 20px;
@@ -366,6 +369,9 @@ hr{
     .list.active{
         top: 25%;
         left: 85%;
+    }
+    .logo{
+        font-size: 3.5vw;
     }
     .menu-description{
         font-size: 3.5vw;
